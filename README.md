@@ -39,28 +39,44 @@ In this project, I was tasked with helping a town modernize their vote counting 
 
 1. PyBank
   * Brainstorming:
-   dates and profits(+)/losses(-), amounts are formatted as 00000 or -00000
-    Total # months
-    dates formatted as DDD-YYYY (NOV-2015), total months means ALL months (jan 2015 and jan 2017 are two separate months)
-    there are no multiples of month/years, one for each
-    [x] so count all rows except header = total months in data set
+#### Header/Before we can begin writing code for our script:
+  import classes (csv and os)<p>
+  locate csv file<p>
+  open it <p>
+  set the csv class's function reader to read the csv file<p>
+  
+#### Notes/things to keep in mind
+    dates and profits(+)/losses(-), amounts are formatted as 00000 or -00000
     
-    Net
-    get the sum of all rows
-    [x] add all rows to a variable set to 0 (except the header)
+#### Total # months
+    dates formatted as DDD-YYYY (NOV-2015)<p>
+    total months means ALL months (i.e. jan 2015 and jan 2017 are two separate months)<p>
+    there are no multiples of month/years, one for each<p>
+    [x] so count all rows except header = total months in data set<p>
     
-    Calc changes
-    ? does changes mean variance?
-    [ ]
+#### Net
+    get the sum of all rows<p>
+    [x] add all rows to a variable set to 0 (except the header)<p>
     
-    Greatest increase in profits (date and amount) over period
-    for every row, find the difference (designate + or - for profit or loss) between that row and row + 1, then put it in a new list
-    (^this will create a list of differences between adjacent months, starting with the first month.)
-    [x] from this list, find the maximum number in the list, then search for that number in the list (checks for multiples)
-       if number of max# is less than 1, pull the date (correlate the position of the max# in its list with the csv rows)
-    [x] from this list, find the minimum number in the list, then search for that number in the list (checks for multiples)
-       if number of min# is less
+#### Calc changes, find max and min change
+     for every row, find the difference (designate + or - for profit or loss) between that row and row + 1, then put it in a new list (diff_list)<p>
+    [x] this will create a list of differences ("change") between adjacent months, starting with the first month.<p>
+    [x] find the average of changes: add all items in list (set sum_diff_list to 0, for items in list add to sum_diff_list)<p> 
+    then divide by length (or count) of items in list<p>
     
+#### Greatest increase in profits (date and amount) over period
+    [x] from diff_list, find the maximum number in the list, then search for that number in the list (checks for multiples)<p>
+       if number of max# is less than 1, pull the date (correlate the position of the max# in the diff_list with the csv rows) amd set as greatest_profit<p>
+       else nubmer of max# if greater<p>
+    [x] from diff_list, find the minimum number in the list, then search for that number in the list (checks for multiples)<p>
+       if number of min# is less than 1, pull the date (correlate the position of the min# in the diff_list with the csv rows) and set as greatest_loss<p>
+    
+#### Print results
+    print( Financial Analysis<p>
+    ------------<p>
+    Total Months: total_months<p>
+    Total: net_total<p>
+    Average Change: average_change<p>
 
   * Pseudocode: 
 
