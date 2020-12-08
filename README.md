@@ -39,7 +39,7 @@ In this project, I was tasked with helping a town modernize their vote counting 
 
 1. PyBank
   * Brainstorming:
-   dates and profits(+)/losses(-)
+   dates and profits(+)/losses(-), amounts are formatted as 00000 or -00000
     Total # months
     dates formatted as DDD-YYYY (NOV-2015), total months means ALL months (jan 2015 and jan 2017 are two separate months)
     there are no multiples of month/years, one for each
@@ -50,9 +50,18 @@ In this project, I was tasked with helping a town modernize their vote counting 
     [x] add all rows to a variable set to 0 (except the header)
     
     Calc changes
+    ? does changes mean variance?
+    [ ]
     
+    Greatest increase in profits (date and amount) over period
+    for every row, find the difference (designate + or - for profit or loss) between that row and row + 1, then put it in a new list
+    (^this will create a list of differences between adjacent months, starting with the first month.)
+    [x] from this list, find the maximum number in the list, then search for that number in the list (checks for multiples)
+       if number of max# is less than 1, pull the date (correlate the position of the max# in its list with the csv rows)
+    [x] from this list, find the minimum number in the list, then search for that number in the list (checks for multiples)
+       if number of min# is less
     
-    amounts are formatted as 00000 or -00000
+
   * Pseudocode: 
 
 
