@@ -116,3 +116,16 @@ print(f"Total: ${sum_net}")
 print(f"Average  Change: ${average_diff}")
 print(f"Greatest Increase in Profits: {month_list[gp_index]} (${greatest_profit})")
 print(f"Greatest Decrease in Profits: {month_list[gl_index]} (${greatest_loss})")
+
+text_path = os.path.join("Resources", "results.txt")
+
+with open(text_path, 'w', newline='', encoding='utf-8') as textfile:
+    
+    textwriter = textfile.write("Financial Analysis\n")
+    textwriter = textfile.write(f"----------------------------\n")
+    textwriter = textfile.write(f"Total Months: {month_count}\n")
+    textwriter = textfile.write(f"Total: ${sum_net}\n")
+    textwriter = textfile.write(f"Average  Change: ${average_diff}\n")
+    textwriter = textfile.write(f"Greatest Increase in Profits: {month_list[gp_index]} (${greatest_profit})\n")
+    textwriter = textfile.write(f"Greatest Decrease in Profits: {month_list[gl_index]} (${greatest_loss})\n")
+    textwriter = textfile.close()
