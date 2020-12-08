@@ -39,7 +39,20 @@ In this project, I was tasked with helping a town modernize their vote counting 
 
 1. PyBank
   * Brainstorming:
- 
+   dates and profits(+)/losses(-)
+    Total # months
+    dates formatted as DDD-YYYY (NOV-2015), total months means ALL months (jan 2015 and jan 2017 are two separate months)
+    there are no multiples of month/years, one for each
+    [x] so count all rows except header = total months in data set
+    
+    Net
+    get the sum of all rows
+    [x] add all rows to a variable set to 0 (except the header)
+    
+    Calc changes
+    
+    
+    amounts are formatted as 00000 or -00000
   * Pseudocode: 
 
 
