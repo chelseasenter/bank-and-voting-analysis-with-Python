@@ -46,40 +46,102 @@ In this project, I was tasked with helping a town modernize their vote counting 
   set the csv class's function reader to read the csv file<p>
   
 #### Notes/things to keep in mind
-    dates and profits(+)/losses(-), amounts are formatted as 00000 or -00000
+  GET RID OF HEADER BEFORE PROCEEDING!
+  dates and profits(+)/losses(-), amounts are formatted as 00000 or -00000
     
 #### Total # months
-    dates formatted as DDD-YYYY (NOV-2015)<p>
-    total months means ALL months (i.e. jan 2015 and jan 2017 are two separate months)<p>
-    there are no multiples of month/years, one for each<p>
-    [x] so count all rows except header = total months in data set<p>
+  dates formatted as DDD-YYYY (NOV-2015)<p>
+  total months means ALL months (i.e. jan 2015 and jan 2017 are two separate months)<p>
+  there are no multiples of month/years, one for each<p>
+  [x] so count all rows except header = total months in data set<p>
     
 #### Net
-    get the sum of all rows<p>
-    [x] add all rows to a variable set to 0 (except the header)<p>
+  get the sum of all rows<p>
+  [x] add all rows to a variable set to 0 (except the header)<p>
     
 #### Calc changes, find max and min change
-     for every row, find the difference (designate + or - for profit or loss) between that row and row + 1, then put it in a new list (diff_list)<p>
-    [x] this will create a list of differences ("change") between adjacent months, starting with the first month.<p>
-    [x] find the average of changes: add all items in list (set sum_diff_list to 0, for items in list add to sum_diff_list)<p> 
+  for every row, find the difference (designate + or - for profit or loss) between that row and row + 1, then put it in a new list (diff_list)<p>
+  [x] this will create a list of differences ("change") between adjacent months, starting with the first month.<p>
+  [x] find the average of changes: add all items in list (set sum_diff_list to 0, for items in list add to sum_diff_list)<p> 
     then divide by length (or count) of items in list<p>
     
 #### Greatest increase in profits (date and amount) over period
-    [x] from diff_list, find the maximum number in the list, then search for that number in the list (checks for multiples)<p>
-       if number of max# is less than 1, pull the date (correlate the position of the max# in the diff_list with the csv rows) amd set as greatest_profit<p>
-       else nubmer of max# if greater<p>
-    [x] from diff_list, find the minimum number in the list, then search for that number in the list (checks for multiples)<p>
-       if number of min# is less than 1, pull the date (correlate the position of the min# in the diff_list with the csv rows) and set as greatest_loss<p>
+   [x] from diff_list, find the greatest_profit in the list (maximum number), then search for that number in the list (checks for multiples)<p>
+    if number of greatest_profit value is less than 1, pull the date (correlate the position of the max# in the diff_list with the csv rows) amd set as greatest_profit<p>
+    else number of greatest_profit is greater than 1 for loop anything that matches greatest_profit and set to print with commas between<p>
+   [x] from diff_list, find the greatest_loss in the list (minimum number), then search for that number in the list (checks for multiples)<p>
+    if number of greatest_loss is less than 1, pull the date (correlate the position of the min# in the diff_list with the csv rows) and set as greatest_loss<p>
+    else number of greatest_loss is greater than 1, for loop anything that matches greatest_loss and set to print with commas between
     
 #### Print results
-    print( Financial Analysis<p>
-    ------------<p>
-    Total Months: total_months<p>
-    Total: net_total<p>
-    Average Change: average_change<p>
-
+ print( Financial Analysis<p>
+ ------------<p>
+ Total Months: total_months<p>
+ Total: net_total<p>
+ Average Change: average_change<p>
+ Greatest Increase in Profits: max_num
+ Greatest Decrease in Losses: min_num
+ <p>
+-----------------------------------------------------------
   * Pseudocode: 
+#### Header/Before we can begin writing code for our script:
+import os <p>
+import csv <p>
+finance_csv = os.path.join("PATH") <p>
+with open(finance_csv, encoding='utf-8') as bankfile:
+csvreader = csv.reader(bankfile, delimiter=",")
 
+#### Notes/things to keep in mind
+ nix_header = next(csvreader)
+ lists
+  
+#### Total # months
+ month_count = len(list(csvreader))
+ [x] so count all rows except header = total months in data set<p>
+ 
+ print(month_count) -- to test it works
+    
+#### Net
+net_total = 0
+for month in csvreader:
+  net_total += month[1]
+[x] add all rows to a variable set to 0 (except the header)<p>
+
+print(net_total) --to make sure it works
+
+#### Calc changes, find max and min change
+--------try list comprehension, maybe?---------diff_list = [diff for diff in csvreader]
+
+counter = 0
+diff_list = []
+row = 0
+while counter < month_count:
+ difference = csvreader[row] + csvraeder[row + 1]
+ counter += 1
+
+--------using for loop, maybe?-----------------------------
+for row in csvreader:
+  difference = row[
+  diff_list.append(difference)
+  for every row, find the difference (designate + or - for profit or loss) between that row and row + 1, then put it in a new list (diff_list)<p>
+  [] this will create a list of differences ("change") between adjacent months, starting with the first month.<p>
+  [] find the average of changes: add all items in list (set sum_diff_list to 0, for items in list add to sum_diff_list)<p> 
+    then divide by length (or count) of items in list<p>
+    
+#### Greatest increase in profits (date and amount) over period
+   [] from diff_list, find the maximum number in the list, then search for that number in the list (checks for multiples)<p>
+    if number of max# is less than 1, pull the date (correlate the position of the max# in the diff_list with the csv rows) amd set as greatest_profit<p>
+    else nubmer of max# if greater<p>
+   [] from diff_list, find the minimum number in the list, then search for that number in the list (checks for multiples)<p>
+    if number of min# is less than 1, pull the date (correlate the position of the min# in the diff_list with the csv rows) and set as greatest_loss<p>
+    
+#### Print results
+ print( Financial Analysis<p>
+ ------------<p>
+ Total Months: total_months<p>
+ Total: net_total<p>
+ Average Change: average_change<p>
+ <p>
 
 2. PyPoll
   * Brainstorming:
