@@ -22,13 +22,26 @@ nix_header = next(csvreader)
 
 ## COUNT TOTAL MONTHS IN DATA
 # get length of rows to get the total months included in the data:
+month_count = len(list(csvreader))
+
+print(month_count)
 
 
 ## NET CHANGE OF ALL MONTHS OVER THE PERIOD:
 # get the sum of all profit/losses over the period:
+net_total = 0
+for month in csvreader: 
+    net_total += month[1]
+
+print(net_total)
+
 
 ## CALCULATE CHANGES OVER THE PERIOD, THEN GET AVERAGE CHANGE
 # find the difference between each month and add that number in a new list:
+
+for month in csvreader:
+    prev_month = 0
+
 
 # find the average of all changes over the period:
 
