@@ -1,14 +1,16 @@
 # python-challenge
 Python Homework Week 3 - PyPoll &amp; PyBank
 
-**Table of Content**
-
-
-## Overview of Project Objectives
+**Table of Content**<p>
+Overview of Project Objectives<p>
+Brainstorming & Pseudocode
+<p><p>
+ 
+# Overview of Project Objectives
 
 This folder contains 2 projects. Below is a summary of each project. Enjoy!
 
-### PyBank 
+## PyBank 
 This project contains a __python__ file that will run a script to analyze my Company's financial records from a **csv** file. 
 
 1. The script will analyze the data and calculate the following metrics: 
@@ -20,7 +22,7 @@ This project contains a __python__ file that will run a script to analyze my Com
   
 2. The final script prints the analysis to the terminal and exports a text file with the results
 
-### PyPoll
+## PyPoll
 In this project, I was tasked with helping a town modernize their vote counting process by creating a python script to process their votes.
 
 1. First, the script calculates the following from the dataset:
