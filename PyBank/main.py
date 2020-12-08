@@ -29,10 +29,10 @@ with open(finance_csv) as bankfile:
 
     for row in csvreader:
         month_list.append(row[0])
-        amount_list.append(row[1])
+        amount_list.append(int(row[1]))
 
-    for row in full_csv:
-        print(row)
+    # for row in full_csv:
+    #     print(row)
 
 ##----DONE---- COUNT TOTAL MONTHS IN DATA
 # get length of rows to get the total months included in the data:
@@ -43,7 +43,7 @@ with open(finance_csv) as bankfile:
 # this will add all profits/losses together for a net
     sum_net= 0
     for row in amount_list:
-        sum_net = sum_net + int(row)
+        sum_net = int(sum_net) + int(row)
 
 
 # ## CALCULATE CHANGES OVER THE PERIOD, THEN GET AVERAGE CHANGE
@@ -71,7 +71,7 @@ with open(finance_csv) as bankfile:
     sum_diff = 0
     for item in diff_list:
         sum_diff = sum_diff + int(item)
-    average_diff = sum_diff / month_count
+    average_diff = round(int(sum_diff / month_count),2)
 
 # ## GREATEST PROFIT MONTH, AMOUNT
 # # using the list of differences between each month, find the highest number, but check for multiples
