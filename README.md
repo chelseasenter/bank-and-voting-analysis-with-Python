@@ -1,2 +1,3 @@
 # python-challenge
-Python Homework Weed 3 - PyPoll &amp; PyBank
+Python Homework Week 3 - PyPoll &amp; PyBank
+
