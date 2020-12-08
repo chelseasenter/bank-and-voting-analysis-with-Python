@@ -1,6 +1,9 @@
 # python-challenge
 Python Homework Week 3 - PyPoll &amp; PyBank
 
+**Table of Content**
+
+
 ## Overview of Project Objectives
 
 This folder contains 2 projects. Below is a summary of each project. Enjoy!
