@@ -15,23 +15,22 @@ finance_csv = os.path.join("Resources","budget_data.csv")
 with open(finance_csv) as bankfile:
     csvreader = csv.reader(bankfile, delimiter=",")
 
+#test
     print(csvreader)
     print("---- csv is pulling up----")
+
 # # get rid of the header!
 #     print({csvreader[3][0]})
     csv_header = next(csvreader)
     print(f"CSV Header: {csv_header}")
 
-# DONE---------
 #this take the previous row and gets the difference (current month - previous month profit/loss)
-#     next = 0
-#     for row in csvreader:
-#         print(f"MONTH AMOUNT: {row[1]}")
-#         print(f"month amount is {int(row[1])} minus {next} = {int(row[1]) - next}")
-#         next = int(row[1])
-#         print(int(next))
-# DONE^^^^^^^^^
-
+    prev_month = 0
+    for row in csvreader:
+        print(f"MONTH AMOUNT: {row[1]}")
+        print(f"month amount is {row[1]} minus {prev_month} = {int(row[1]) - prev_month}")
+        prev_month = int(row[1])
+        print(int(prev_month))
 
 # ## COUNT TOTAL MONTHS IN DATA
 # # get length of rows to get the total months included in the data:
@@ -42,10 +41,10 @@ with open(finance_csv) as bankfile:
 
 # ## NET CHANGE OF ALL MONTHS OVER THE PERIOD:
 #this will add all profits/losses together for a net
-    sum = 0
-    for row in csvreader:
-        sum += int(row[1])
-    print(f"The net profits for this period is: {sum}")
+    # sum = 0
+    # for row in csvreader:
+    #     sum += int(row[1])
+    # print(f"The net profits for this period is: {sum}")
 
 # ## CALCULATE CHANGES OVER THE PERIOD, THEN GET AVERAGE CHANGE
 # # find the difference between each month and add that number in a new list:
