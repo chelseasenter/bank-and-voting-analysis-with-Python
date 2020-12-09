@@ -14,15 +14,12 @@ finance_csv = os.path.join("Resources","budget_data.csv")
 with open(finance_csv) as bankfile:
     csvreader = csv.reader(bankfile, delimiter=",")
 
-#----test that csvreader is working by printing
-    # print(csvreader)
-    # print("---- csv is pulling up----")
 
 # # get rid of the header!
     csv_header = next(csvreader)
-#----test csv_header with print
-    # print(f"CSV Header: {csv_header}")
-#working
+
+
+# create lists for processing, analyzing, and displaying data
     month_list = []
     amount_list = []
     full_csv = zip(month_list, amount_list)
@@ -54,17 +51,9 @@ with open(finance_csv) as bankfile:
     for row in amount_list:
         diff_list.append(int(row) - prev_month)
         prev_month = int(row)
+# remember: "header" of diff_list is the first month - 0 (not the "first" difference value we want)
     diff_header = diff_list.pop(0)
 
-# remember: "header" of diff_list is the first month - 0 (not the "first" difference value we want)
-
-#----original solution to above (in case you mess it up ^^)
-    # prev_month = 0
-    # diff_list = []
-    # for row in csvreader:
-    #     diff_list.append(int(row[1]) - prev_month)
-    #     prev_month = int(row[1])
-    # print(diff_list)
     
 # # find the average of all changes over the period:
     #create for loop to add up all changes (NOT PROFIT/LOSSES)
@@ -117,7 +106,7 @@ print(f"Average  Change: ${average_diff}")
 print(f"Greatest Increase in Profits: {month_list[gp_index]} (${greatest_profit})")
 print(f"Greatest Decrease in Profits: {month_list[gl_index]} (${greatest_loss})")
 
-text_path = os.path.join("Resources", "results.txt")
+text_path = os.path.join("Analysis", "results.txt")
 
 with open(text_path, 'w', newline='', encoding='utf-8') as textfile:
     
@@ -129,3 +118,6 @@ with open(text_path, 'w', newline='', encoding='utf-8') as textfile:
     textwriter = textfile.write(f"Greatest Increase in Profits: {month_list[gp_index]} (${greatest_profit})\n")
     textwriter = textfile.write(f"Greatest Decrease in Profits: {month_list[gl_index]} (${greatest_loss})\n")
     textwriter = textfile.close()
+
+    #can store variable, tuple with all f strings
+    #google writing text output, tuples?
