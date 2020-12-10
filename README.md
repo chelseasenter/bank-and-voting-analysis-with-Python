@@ -165,3 +165,14 @@ for row in csvreader:
  find the highest value in dictionary (I found a stack overflow solution for this problem that can be found [here](https://stackoverflow.com/questions/268272/getting-key-with-maximum-value-in-dictionary)
  
   * Pseudocode:
+
+## Review of Projects: notes, links, etc.
+
+Some links that I found helpful during these projects:
+[how to round a number in python](https://stackoverflow.com/questions/20457038/how-to-round-to-2-decimals-with-python)
+[how to write files to a txt file](https://www.datacamp.com/community/tutorials/reading-writing-files-python)
+[finding the index of an item in a list](https://stackoverflow.com/questions/176918/finding-the-index-of-an-item-in-a-list)
+[finding the min/max of items in a list](https://medium.com/programminginpython-com/python-program-to-find-the-largest-and-smallest-number-in-a-list-fd8fac8aba08)
+[printing lists: 4 ways](https://www.geeksforgeeks.org/print-lists-in-python-4-different-ways/)
+[python sets](https://www.w3schools.com/python/python_sets.asp)
+[finding unique values in a list](https://stackoverflow.com/questions/12897374/get-unique-values-from-a-list-in-python)
