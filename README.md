@@ -156,15 +156,36 @@ for row in csvreader:
  5. winner of the election based on popular vote
  
  summary:
- need a list of vote choices (vote_choice_list)
- (next header) then len(vote_choice_list) for total votes number - 1
- find unique values of vote_choice_list - 2
- sum items in vote_choice_list by name (correy_list, khan_list, li_list, etc) - 4
- divide individual candidate list by vote_choice_list, set value to pct_khan, pct_correy, etc - 3
- create dictionary totals (khan:15, li:23, etc)
- find the highest value in dictionary (I found a stack overflow solution for this problem that can be found [here](https://stackoverflow.com/questions/268272/getting-key-with-maximum-value-in-dictionary)
+ [x] set up imports, open and read csv files
+ [x] need a list of vote choices (vote_choice_list)
+ [x] (next header) then len(vote_choice_list) for total votes number - 1
+ [x] find unique values (candidate names) of vote_choice_list - 2
+ [] sum items in vote_choice_list by name (correy_list, khan_list, li_list, etc) - 4
+ [] divide individual candidate list by vote_choice_list, set value to pct_khan, pct_correy, etc - 3
+ [] create dictionary totals (khan:15, li:23, etc)
+ [] find the highest value in dictionary
  
   * Pseudocode:
+  # SET UP 
+  import csv & os
+  with open election_data.csv as pollfile
+  call upon csv.reader to read pollfile, using delimiter=","
+  
+  csv_header = next(csvreader)
+  
+  vote_choice_list = []
+  for each row in csv reader, append to vote_choice_list
+  
+  vote_count = len(vote_choice_list)
+  
+  candidates_list = list(set(vote_choice_list))
+  
+  final_results = {}
+  for candidate in candidates_list = 
+   final_tally = vote_choice_list.count(candidate)
+   add to dictionary with final_results[candidate] = final_tally
+  
+  
 
 ## Review of Projects: notes, links, etc.
 
@@ -175,4 +196,7 @@ Some links that I found helpful during these projects:
 [finding the min/max of items in a list](https://medium.com/programminginpython-com/python-program-to-find-the-largest-and-smallest-number-in-a-list-fd8fac8aba08)
 [printing lists: 4 ways](https://www.geeksforgeeks.org/print-lists-in-python-4-different-ways/)
 [python sets](https://www.w3schools.com/python/python_sets.asp)
-[finding unique values in a list](https://stackoverflow.com/questions/12897374/get-unique-values-from-a-list-in-python)
+[finding unique values in a list by creating a set](https://stackoverflow.com/questions/12897374/get-unique-values-from-a-list-in-python)
+[find the highest value in a dictionary](https://stackoverflow.com/questions/268272/getting-key-with-maximum-value-in-dictionary)
+[how to count an item in a list](https://www.kite.com/python/answers/how-to-count-the-number-of-occurrences-of-an-element-in-a-list-in-python#:~:text=of%20%22b%22%20.-,Use%20list.,number%20of%20occurrences%20of%20value%20.)
+[how to add a key:value to a dictionary](https://www.journaldev.com/23232/python-add-to-dictionary)
