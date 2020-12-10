@@ -27,7 +27,7 @@ In this project, I was tasked with helping a town modernize their vote counting 
 
 1. First, the script calculates the following from the dataset:
    * total number of votes cast
-    * a list of candidates who received votes
+   * a list of candidates who received votes
    * percentage of votes each candidate won
    * total number of votes each candidate won
    * the winner of the election
@@ -148,20 +148,75 @@ for row in csvreader:
 
   * Brainstorming:
  three columns = Voter ID, County, and Candidate
- *note: voter ID is an 8 character string, NOT integer
+ --note to self: voter ID is an 8 character string, NOT integer!
  1. total votes cast (len of list minus header)
  2. total list of all candidates who received votes (unique value finder, make list of those)
+   -- to do this, I will use a set then convert to list to pull out unique values
  3. percentage of the votes won by each candidate (tally total votes for each candidate, put them in lists, maybe a dictionary of lists if you have time)
  4. total number of votes for each candidate
+   --to do this, I want to create a dictionary with keys of the candidate names and values as the sum of their votes. So...
+   --I will need to create a for loop to count each candidate in candidate names in the overall vote_choice_list, then...
+   --add the candidate name as key and the number of votes as value
  5. winner of the election based on popular vote
  
  summary:
- need a list of vote choices (vote_choice_list)
- (next header) then len(vote_choice_list) for total votes number - 1
- find unique values of vote_choice_list - 2
- sum items in vote_choice_list by name (correy_list, khan_list, li_list, etc) - 4
- divide individual candidate list by vote_choice_list, set value to pct_khan, pct_correy, etc - 3
- create dictionary totals (khan:15, li:23, etc)
- find the highest value in dictionary (I found a stack overflow solution for this problem that can be found [here](https://stackoverflow.com/questions/268272/getting-key-with-maximum-value-in-dictionary)
+[x] set up imports, open and read csv files
+[x] next header - we don't need it!
+[x] need a list of vote choices (vote_choice_list) then...
+[x] len(vote_choice_list) for total votes number - 1
+[x] find unique values (candidate names) of vote_choice_list - 2
+[x] sum items in vote_choice_list by name (correy_list, khan_list, li_list, etc) - 4
+[] divide individual candidate list by vote_choice_list, set value to pct_khan, pct_correy, etc - 3
+[] create dictionary totals (khan:15, li:23, etc)
+[] find the highest value in dictionary
  
   * Pseudocode:
+[x] set up imports, open and read csv files
+    import csv & os
+    with open election_data.csv as pollfile
+    call upon csv.reader to read pollfile, using delimiter=","
+
+[x] next header - we don't need it!
+    next(csvreader)
+  
+[x] need a list of vote choices (vote_choice_list) then...
+    vote_choice_list = []
+    for row in csvreader:
+        append() vote_choice_list with index position [2], because lists start at [0] and we need the last "column" in the row)
+    
+[x] len(vote_choice_list) for total votes number - 1
+    vote_count = len(vote_choice_list)
+    print(vote_count)
+    print("----------")
+
+[x] find unique values (candidate names) of vote_choice_list - 2
+      list(set(vote_choice_list))
+
+[x] sum items in vote_choice_list by name (correy_list, khan_list, li_list, etc) - 4
+
+    final_results = {}
+    
+    for candidate in candidates_names:
+        final_tally = vote_choice_list.count(candidate)
+        final_results[candidate] = final_tally
+    print(final_results) 
+
+[] divide individual candidate list by vote_choice_list, set value to pct_khan, pct_correy, etc - 3
+[] create dictionary totals (khan:15, li:23, etc)
+[] find the highest value in dictionary
+  
+
+## Review of Projects: notes, links, etc.
+
+Some links that I found helpful during these projects:
+[how to round a number in python](https://stackoverflow.com/questions/20457038/how-to-round-to-2-decimals-with-python)
+[how to write files to a txt file](https://www.datacamp.com/community/tutorials/reading-writing-files-python)
+[finding the index of an item in a list](https://stackoverflow.com/questions/176918/finding-the-index-of-an-item-in-a-list)
+[finding the min/max of items in a list](https://medium.com/programminginpython-com/python-program-to-find-the-largest-and-smallest-number-in-a-list-fd8fac8aba08)
+[printing lists: 4 ways](https://www.geeksforgeeks.org/print-lists-in-python-4-different-ways/)
+[python sets](https://www.w3schools.com/python/python_sets.asp)
+[finding unique values in a list by creating a set](https://stackoverflow.com/questions/12897374/get-unique-values-from-a-list-in-python)
+[find the highest value in a dictionary](https://stackoverflow.com/questions/268272/getting-key-with-maximum-value-in-dictionary)
+[how to count an item in a list](https://www.kite.com/python/answers/how-to-count-the-number-of-occurrences-of-an-element-in-a-list-in-python#:~:text=of%20%22b%22%20.-,Use%20list.,number%20of%20occurrences%20of%20value%20.)
+[how to add a key:value to a dictionary](https://www.journaldev.com/23232/python-add-to-dictionary)
+[printing values from a dictionary](https://realpython.com/iterate-through-dictionary-python/)
