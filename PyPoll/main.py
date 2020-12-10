@@ -35,7 +35,12 @@ with open(election_csv) as pollfile:
         final_results[candidate] = final_tally
     print(final_results) 
 
+# divide individual candidate list by vote_choice_list, set value to pct_khan, pct_correy, etc - 3
+    for candidate in final_results:
+        
+# create dictionary totals (khan:15, li:23, etc)
 
+# find the highest value in dictionary
 
 # key = ["apple", "banana", "cherry", "pear"]         #equivalent to candidates_names
 # fruits = ["apple", "banana", "cherry", "apple",     #equivalent to vote_choice_list
