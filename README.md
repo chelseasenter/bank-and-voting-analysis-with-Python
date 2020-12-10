@@ -148,10 +148,20 @@ for row in csvreader:
 
   * Brainstorming:
  three columns = Voter ID, County, and Candidate
- total votes cast (len of list minus header)
- total list of all candidates who received votes (unique value finder, make list of those)
- percentage of the votes won by each candidate (tally total votes for each candidate, put them in lists, maybe a dictionary of lists if you have time)
- total number of votes for each candidate
- winner of the election based on popular vote
+ *note: voter ID is an 8 character string, NOT integer
+ 1. total votes cast (len of list minus header)
+ 2. total list of all candidates who received votes (unique value finder, make list of those)
+ 3. percentage of the votes won by each candidate (tally total votes for each candidate, put them in lists, maybe a dictionary of lists if you have time)
+ 4. total number of votes for each candidate
+ 5. winner of the election based on popular vote
+ 
+ summary:
+ need a list of vote choices (vote_choice_list)
+ (next header) then len(vote_choice_list) for total votes number - 1
+ find unique values of vote_choice_list - 2
+ sum items in vote_choice_list by name (correy_list, khan_list, li_list, etc) - 4
+ divide individual candidate list by vote_choice_list, set value to pct_khan, pct_correy, etc - 3
+ create dictionary totals (khan:15, li:23, etc)
+ find the highest value in dictionary (I found a stack overflow solution for this problem that can be found [here](https://stackoverflow.com/questions/268272/getting-key-with-maximum-value-in-dictionary)
  
   * Pseudocode:
