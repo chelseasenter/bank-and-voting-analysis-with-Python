@@ -22,14 +22,10 @@ with open(finance_csv) as bankfile:
 # create lists for processing, analyzing, and displaying data
     month_list = []
     amount_list = []
-    full_csv = zip(month_list, amount_list)
 
     for row in csvreader:
         month_list.append(row[0])
         amount_list.append(int(row[1]))
-
-    # for row in full_csv:
-    #     print(row)
 
 ##----DONE---- COUNT TOTAL MONTHS IN DATA
 # get length of rows to get the total months included in the data:
@@ -98,26 +94,20 @@ with open(finance_csv) as bankfile:
 
 # ##PRINT RESULTS
 # # print title, -----, Total Months, Total Net, Average Change, 
-print("Financial Analysis")
-print("----------------------------")
-print(f"Total Months: {month_count}")
-print(f"Total: ${sum_net}")
-print(f"Average  Change: ${average_diff}")
-print(f"Greatest Increase in Profits: {month_list[gp_index+1]} (${greatest_profit})")
-print(f"Greatest Decrease in Profits: {month_list[gl_index+1]} (${greatest_loss})")
+final_results = [f"Financial Analysis\n", 
+f"----------------------------\n", 
+f"Total Months: {month_count}\n", 
+f"Total: ${sum_net}\n", 
+f"Average  Change: ${average_diff}\n", 
+f"Greatest Increase in Profits: {month_list[gp_index+1]} (${greatest_profit})\n", 
+f"Greatest Decrease in Profits: {month_list[gl_index+1]} (${greatest_loss})\n"
+]
 
 text_path = os.path.join("Analysis", "results.txt")
 
 with open(text_path, 'w', newline='', encoding='utf-8') as textfile:
     
-    textwriter = textfile.write("Financial Analysis\n")
-    textwriter = textfile.write(f"----------------------------\n")
-    textwriter = textfile.write(f"Total Months: {month_count}\n")
-    textwriter = textfile.write(f"Total: ${sum_net}\n")
-    textwriter = textfile.write(f"Average  Change: ${average_diff}\n")
-    textwriter = textfile.write(f"Greatest Increase in Profits: {month_list[gp_index]} (${greatest_profit})\n")
-    textwriter = textfile.write(f"Greatest Decrease in Profits: {month_list[gl_index]} (${greatest_loss})\n")
+    for line in final_results:
+        textwriter = textfile.write(line)
+        print(line)
     textwriter = textfile.close()
-
-    #can store variable, tuple with all f strings
-    #google writing text output, tuples?
