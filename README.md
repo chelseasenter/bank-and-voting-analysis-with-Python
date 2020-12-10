@@ -144,6 +144,14 @@ for row in csvreader:
  <p>
 
 2. PyPoll
+-- in this section I will show (1) my initial brainstorming and (2) my pseudocode, so you can follow my thoughts in how I decided to complete these projects. Please forgive me, this section might be a little messy.
+
   * Brainstorming:
+ three columns = Voter ID, County, and Candidate
+ total votes cast (len of list minus header)
+ total list of all candidates who received votes (unique value finder, make list of those)
+ percentage of the votes won by each candidate (tally total votes for each candidate, put them in lists, maybe a dictionary of lists if you have time)
+ total number of votes for each candidate
+ winner of the election based on popular vote
  
   * Pseudocode:
