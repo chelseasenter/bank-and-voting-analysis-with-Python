@@ -53,19 +53,19 @@ with open(finance_csv) as bankfile:
         prev_month = int(row)
 # remember: "header" of diff_list is the first month - 0 (not the "first" difference value we want)
     diff_header = diff_list.pop(0)
-
+    diff_count = len(diff_list)
     
 # # find the average of all changes over the period:
     #create for loop to add up all changes (NOT PROFIT/LOSSES)
     sum_diff = 0
     for item in diff_list:
         sum_diff = sum_diff + int(item)
-    average_diff = round(int(sum_diff / month_count),2)
+    average_diff = round(int(sum_diff / diff_count),2)
 
 # ## GREATEST PROFIT MONTH, AMOUNT
 # # using the list of differences between each month, find the highest number, but check for multiples
-    greatest_profit = max(amount_list)
-    gp_index = amount_list.index(greatest_profit)
+    greatest_profit = max(diff_list)
+    gp_index = diff_list.index(greatest_profit)
     # maxi_count = 0
     # multi_maxi = []
     # for maxi in amount_list:
@@ -78,8 +78,8 @@ with open(finance_csv) as bankfile:
 
 # ## GREATEST LOSS MONTH, AMOUNT
 # # using the list of differences between each month, find the lowest number, but check for multiples
-    greatest_loss = min(amount_list)
-    gl_index = amount_list.index(greatest_loss)
+    greatest_loss = min(diff_list)
+    gl_index = diff_list.index(greatest_loss)
     # mini_count = 0
     # multi_mini = []
     # for mini in amount_list:
@@ -103,8 +103,8 @@ print("----------------------------")
 print(f"Total Months: {month_count}")
 print(f"Total: ${sum_net}")
 print(f"Average  Change: ${average_diff}")
-print(f"Greatest Increase in Profits: {month_list[gp_index]} (${greatest_profit})")
-print(f"Greatest Decrease in Profits: {month_list[gl_index]} (${greatest_loss})")
+print(f"Greatest Increase in Profits: {month_list[gp_index+1]} (${greatest_profit})")
+print(f"Greatest Decrease in Profits: {month_list[gl_index+1]} (${greatest_loss})")
 
 text_path = os.path.join("Analysis", "results.txt")
 
