@@ -20,8 +20,7 @@ with open(election_csv) as pollfile:
     
 #find the length of the list for the total votes cast
     vote_count = len(vote_choice_list)
-    print(vote_count)
-    print("----------")
+
 
 # find the unique values of the list by creating a set of vote_choice_list 
 #  -this will create the candidates_names - candidates who received votes)
@@ -29,47 +28,52 @@ with open(election_csv) as pollfile:
 
 #create a dictionary to store the final_results ("candidate_1":16, "candidate_1":25, "candidate_3":37, ...)
     final_results = {}
-    
+        
     for candidate in candidates_names:
         final_tally = vote_choice_list.count(candidate)
         final_results[candidate] = final_tally
-    print(final_results) 
-    print("------")
 
-    highest_votes = {}
 
+    winner_value = 0
 
 # divide individual candidate list by vote_choice_list, set value to pct_khan, pct_correy, etc - 3
     for candidate, final_tally in final_results.items():
-        final_results[candidate] = [final_tally, round((final_tally / vote_count),2)]
-        highest_votes["name"] = candidate
+        final_results[candidate] = [final_tally, round((final_tally / vote_count)*100,3)]
+        if final_tally > winner_value:
+            winner_value = final_tally
+            winner_name = candidate
+            winner_pct = final_results[candidate][1]
+
+
         # if this current higher than previous percentage, add to highest dictionary
-    print(final_results)
-    print("------")
 
-#look for the highest one
-#set variable initialize to be highest value
+final_header = [f"Election Results", 
+f"-------------------------",
+f"Total Votes: {vote_count}", 
+f"-------------------------"
+]
+final_candidates = [f"{name}: {final_results[name][1]}% ({final_results[name][0]})" for name in final_results]
 
-    
-    print(final_results["Khan"][1])
-    #access same way to acces value, because value is list, use bracket notation 
+txt_path = os.path.join("Analysis","results.txt")
 
-# create dictionary totals (khan:15, li:23, etc)
-
-# find the highest value in dictionary
-
-
-      
-# #reference this when finding the winner (candidate with the most votes)
-# stats = {'a':1000, 'b':3000, 'c': 100}
-
-# winner = max(stats, key=stats.get)
-
-# print(winner)
+with open(txt_path, "w", newline="", encoding="utf-8") as textfile:
+    for header in final_header:
+        textwriter = textfile.write(header)
+        print(header)
+        for candidates in final_candidates:
+            print(candidates)
+        print("-------------------------")
+        print(f"Winner: {winner_name}")
 
 
-# for key in mydic:
-#   print("the key name is" + key + "and its value is" + mydic[key])
+
+
+
+
+    # for name in final_results:
+    #     print(f"{name}: {final_results[name][0]}% ({final_results[name][1]})")
+
+
 
 
 
