@@ -34,24 +34,31 @@ with open(election_csv) as pollfile:
         final_tally = vote_choice_list.count(candidate)
         final_results[candidate] = final_tally
     print(final_results) 
+    print("------")
+
+    highest_votes = {}
+
 
 # divide individual candidate list by vote_choice_list, set value to pct_khan, pct_correy, etc - 3
-    for candidate in final_results:
-        
+    for candidate, final_tally in final_results.items():
+        final_results[candidate] = [final_tally, round((final_tally / vote_count),2)]
+        highest_votes["name"] = candidate
+        # if this current higher than previous percentage, add to highest dictionary
+    print(final_results)
+    print("------")
+
+#look for the highest one
+#set variable initialize to be highest value
+
+    
+    print(final_results["Khan"][1])
+    #access same way to acces value, because value is list, use bracket notation 
+
 # create dictionary totals (khan:15, li:23, etc)
 
 # find the highest value in dictionary
 
-# key = ["apple", "banana", "cherry", "pear"]         #equivalent to candidates_names
-# fruits = ["apple", "banana", "cherry", "apple",     #equivalent to vote_choice_list
-# "banana", "cherry", "apple", "banana", "apple"
-# ]
-# fruit_dict = dict()                                 #equivalent to final_results
 
-# for x in key:                                       #for _ in candidates_names
-#     occurrences = fruits.count(x)                   #occurences = vote_choice_list.count(_)
-#     fruit_dict[x] = occurrences                     #final_results[_] = occurences
-# print(fruit_dict)                                   #print(final_results)
       
 # #reference this when finding the winner (candidate with the most votes)
 # stats = {'a':1000, 'b':3000, 'c': 100}
@@ -61,6 +68,8 @@ with open(election_csv) as pollfile:
 # print(winner)
 
 
+# for key in mydic:
+#   print("the key name is" + key + "and its value is" + mydic[key])
 
 
 
