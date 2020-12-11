@@ -56,39 +56,19 @@ with open(finance_csv) as bankfile:
     sum_diff = 0
     for item in diff_list:
         sum_diff = sum_diff + int(item)
-    average_diff = round(int(sum_diff / diff_count),2)
+    average_diff = round(int(sum_diff / diff_count),4)
 
 # ## GREATEST PROFIT MONTH, AMOUNT
 # # using the list of differences between each month, find the highest number, but check for multiples
     greatest_profit = max(diff_list)
     gp_index = diff_list.index(greatest_profit)
-    # maxi_count = 0
-    # multi_maxi = []
-    # for maxi in amount_list:
-    #     maxi_count += 1
-    # if max_count < 1:
-    #     print(f"The greatest loss occured during the month of {reference the month_list item here}: {greatest_profit}")
-    # else:
-    #     print(f"There were multiple months that had the greatest profit. These months are:")
-    #     print(f"{multi_maxi}")
+
 
 # ## GREATEST LOSS MONTH, AMOUNT
 # # using the list of differences between each month, find the lowest number, but check for multiples
     greatest_loss = min(diff_list)
     gl_index = diff_list.index(greatest_loss)
-    # mini_count = 0
-    # multi_mini = []
-    # for mini in amount_list:
-    #     mini_count += 1
-    # if mini_count < 1: 
-    #     print(f"The greatest loss occured during the month of {reference the month_list item here}: {greatest_loss}")
-    # else:
-    #     for minis in amount_list:
-    #         if minis == greatest_loss:
-    #             multi_mini.append(minis)
-    #     print(f"There were multiple months that had the greatest loss. These months are:")
-    #     for minis in multi_mini:
-    #         print(f"{multi_mini}")
+
 
 
 
