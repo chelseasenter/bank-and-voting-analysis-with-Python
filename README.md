@@ -11,7 +11,7 @@ Brainstorming & Pseudocode
 This folder contains 2 projects. Below is a summary of each project. Enjoy!<p><p>
 
 ### PyBank 
-This project contains a __python__ file that will run a script to analyze my Company's financial records from a **csv** file. <p><p>
+This project contains a __python__ file (main.py) that will run a script to analyze my Company's financial records from a **csv** file (Resources > budget_data.csv). <p><p>
 
 1. The script will analyze the data and calculate the following metrics: <p>
    * Total number of months in the provided data set<p>
@@ -23,7 +23,7 @@ This project contains a __python__ file that will run a script to analyze my Com
 2. The final script prints the analysis to the terminal and exports a text file with the results<p>
 
 ### PyPoll
-In this project, I was tasked with helping a town modernize their vote counting process by creating a python script to process their votes.<p><p>
+In this project, I was tasked with helping a town modernize their vote counting process by creating a python script (main.py) to process their votes (Resources > election_data.csv).<p><p>
 
 1. First, the script calculates the following from the dataset:<p>
    * total number of votes cast<p>
@@ -35,7 +35,7 @@ In this project, I was tasked with helping a town modernize their vote counting 
 2. The script will then print out the calculations in the previous step to the terminal and export a text file with the results.<p>
 
 ## Brainstorming and Pseudocode
--- in this section I will show <p>
+  -- in this section I will show <p>
 (1) my initial brainstorming and <p>
 (2) my pseudocode, so you can follow my thoughts in how I decided to complete these projects. <p>
 Please forgive me, this section might be a little messy.<p><p>
