@@ -24,7 +24,7 @@ helpful links<p>
   </p>
  </details>
 <p><p>
-  - - - -
+ - - - -
 
 # Overview of Project Objectives
 
