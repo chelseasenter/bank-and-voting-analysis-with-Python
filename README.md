@@ -2,8 +2,12 @@
 Python Homework Week 3 - PyPoll &amp; PyBank<p>
 
 **Table of Content**<p>
-Overview of Project Objectives<p>
+Overview of Project Objectives: PyBank & PyPoll<p>
 Brainstorming & Pseudocode
+>> PyBank: Brainstorming
+>> PyBank: Pseudocode
+>> PyPoll: Brainstorming
+>> PyPoll: Pseudocode
 <p><p>
  
 ## Overview of Project Objectives
@@ -17,7 +21,7 @@ This project contains a __python__ file (main.py) that will run a script to anal
    * Total number of months in the provided data set<p>
    * Net Profits and Losses over the entire period<p>
    * Changes in Profits and Losses over the entire period<p>
-    * as well as the average of those changes<p>
+   * as well as the average of those changes<p>
    * Greatest increase and decrease in profits and losses over the entire period, represented by date and amount<p><p>
   
 2. The final script prints the analysis to the terminal and exports a text file with the results<p>
@@ -41,42 +45,42 @@ In this project, I was tasked with helping a town modernize their vote counting 
 Please forgive me, this section might be a little messy.<p><p>
 
 1. PyBank<p>
-  * Brainstorming:<p>
-[x] Header/Before we can begin writing code for our script:<p>
+### Brainstorming:<p>
+- [x] Header/Before we can begin writing code for our script:<p>
   import classes (csv and os)<p>
   locate csv file<p>
   open it <p>
   set the csv class's function reader to read the csv file<p>
   
-[x] Notes/things to keep in mind
+- [x] Notes/things to keep in mind
   GET RID OF HEADER BEFORE PROCEEDING!
   dates and profits(+)/losses(-), amounts are formatted as 00000 or -00000
     
-[x] Total # months
+- [x] Total # months
   dates formatted as DDD-YYYY (NOV-2015)<p>
   total months means ALL months (i.e. jan 2015 and jan 2017 are two separate months)<p>
   there are no multiples of month/years, one for each<p>
   [x] so count all rows except header = total months in data set<p>
     
-[x] Net
+- [x] Net
   get the sum of all rows<p>
-  [x] add all rows to a variable set to 0 (except the header)<p>
+- [x] add all rows to a variable set to 0 (except the header)<p>
     
-[x] Calc changes, find max and min change
+- [x] Calc changes, find max and min change
   for every row, find the difference (designate + or - for profit or loss) between that row and row + 1, then put it in a new list (diff_list)<p>
-  [x] this will create a list of differences ("change") between adjacent months, starting with the first month.<p>
-  [x] find the average of changes: add all items in list (set sum_diff_list to 0, for items in list add to sum_diff_list)<p> 
+-   [x] this will create a list of differences ("change") between adjacent months, starting with the first month.<p>
+-   [x] find the average of changes: add all items in list (set sum_diff_list to 0, for items in list add to sum_diff_list)<p> 
     then divide by length (or count) of items in list<p><p>
     
-[x] Greatest increase in profits (date and amount) over period<p>
-   [x] from diff_list, find the greatest_profit in the list (maximum number), then search for that number in the list (checks for multiples)<p>
+- [x] Greatest increase in profits (date and amount) over period<p>
+-   [x] from diff_list, find the greatest_profit in the list (maximum number), then search for that number in the list (checks for multiples)<p>
     if number of greatest_profit value is less than 1, pull the date (correlate the position of the max# in the diff_list with the csv rows) amd set as greatest_profit<p>
     else number of greatest_profit is greater than 1 for loop anything that matches greatest_profit and set to print with commas between<p>
-   [x] from diff_list, find the greatest_loss in the list (minimum number), then search for that number in the list (checks for multiples)<p>
+-   [x] from diff_list, find the greatest_loss in the list (minimum number), then search for that number in the list (checks for multiples)<p>
     if number of greatest_loss is less than 1, pull the date (correlate the position of the min# in the diff_list with the csv rows) and set as greatest_loss<p>
     else number of greatest_loss is greater than 1, for loop anything that matches greatest_loss and set to print with commas between<p><p>
 
-[x] Print results<p>
+- [x] Print results<p>
  print( Financial Analysis<p>
  ------------<p>
  Total Months: total_months<p>
@@ -86,7 +90,8 @@ Please forgive me, this section might be a little messy.<p><p>
  Greatest Decrease in Losses: min_num<p>
  <p><p>
 -----------------------------------------------------------<p>
-  * Pseudocode: <p>
+
+### Pseudocode: <p>
 [x] Header/Before we can begin writing code for our script:<p>
 import os <p>
 import csv <p>
@@ -142,7 +147,7 @@ while counter < month_count:<p>
  (2) my pseudocode, so you can follow my thoughts in how I decided to complete these projects. <p>
  Please forgive me, this section might be a little messy.<p><p>
 
-  * Brainstorming:<p>
+### Brainstorming:<p>
  three columns = Voter ID, County, and Candidate<p>
  --note to self: voter ID is an 8 character string, NOT integer!<p>
  1. total votes cast (len of list minus header)<p>
@@ -166,7 +171,7 @@ Summary:<p>
 [] create dictionary totals (khan:15, li:23, etc)<p>
 [] find the highest value in dictionary<p><p>
  
-  * Pseudocode:<p>
+### Pseudocode:<p>
 [x] set up imports, open and read csv files<p>
     import csv & os<p>
     with open election_data.csv as pollfile<p>
@@ -212,6 +217,11 @@ Summary:<p>
              footer declaring winner <p> <p>
 
 ## Review of Projects: notes, links, etc.
+
+After seeing how other READMEs are formatted, I will no longer include the brainstorming section. I will possibly the Pseudocode portion, especially when I'm completing coursework to show my work. This illustrates to me the importance of extracurricular projects, so I have the freedom to exclude "my process" notes and focus fully on the material I'm creating.<p><p>
+
+I was doubtful the scripts I wrote could be condensed further. However, after looking over it, I'm quite pleased with what I created. I'm sure I will find quicker ways to get the results I need, but for now this wasn't half bad.<p><p>
+
 __Some links that I found helpful during these projects:__<p>
 [how to round a number in python](https://stackoverflow.com/questions/20457038/how-to-round-to-2-decimals-with-python)<p>
 [how to write files to a txt file](https://www.datacamp.com/community/tutorials/reading-writing-files-python)<p>
