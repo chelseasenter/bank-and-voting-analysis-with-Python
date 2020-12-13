@@ -41,17 +41,16 @@ In this project, I was tasked with helping a town modernize their vote counting 
 
 2. The script will then print out the calculations in the previous step to the terminal and export a text file with the results.<p>
 
-<details><summary>Brainstorming and Pseudocode </summary>
+##Brainstorming and Pseudocode
 <p>
 -- in this section I will show <p>
 (1) my initial brainstorming and <p>
 (2) my pseudocode, so you can follow my thoughts in how I decided to complete these projects. <p>
 Please forgive me, this section might be a little messy.<p><p>
- </p>
- </details>
+
  
 1. PyBank<p>
-### Brainstorming:<p>
+ <details><summary> Brainstorming: </summary>
 - [x] Header/Before we can begin writing code for our script:<p>
   import classes (csv and os)<p>
   locate csv file<p>
@@ -95,7 +94,8 @@ Please forgive me, this section might be a little messy.<p><p>
  Greatest Increase in Profits: max_num<p>
  Greatest Decrease in Losses: min_num<p>
  <p><p>
------------------------------------------------------------<p>
+</p>
+</details>
 
 ### Pseudocode: <p>
 - [x] Header/Before we can begin writing code for our script:<p>
