@@ -30,7 +30,7 @@ helpful links<p>
 This folder contains 2 projects. Below is a summary of each project. Enjoy!<p><p>
 
 ## PyBank 
-section_title<a name="section_name"></a>
+<a name="section_name"></a>here
 This project contains a __python__ file (main.py) that will run a script to analyze my Company's financial records from a **csv** file (Resources > budget_data.csv). <p><p>
 
  1. The script will analyze the data and calculate the following metrics: <p>
