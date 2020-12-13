@@ -24,7 +24,8 @@ helpful links<p>
   </p>
  </details>
 <p><p>
- 
+  - - - -
+
 # Overview of Project Objectives
 
 This folder contains 2 projects. Below is a summary of each project. Enjoy!<p><p>
