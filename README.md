@@ -1,5 +1,6 @@
 # python-challenge
 Python Homework Week 3 - PyPoll &amp; PyBank<p>
+Chelsea Senter <p>
 
 # Table of Contents 
 <details><summary> Overview of Project Objectives: </summary>
@@ -24,11 +25,11 @@ PyPoll<p>
  </details>
 <p><p>
  
-## Overview of Project Objectives
+# Overview of Project Objectives
 
 This folder contains 2 projects. Below is a summary of each project. Enjoy!<p><p>
 
-### PyBank 
+## PyBank 
 This project contains a __python__ file (main.py) that will run a script to analyze my Company's financial records from a **csv** file (Resources > budget_data.csv). <p><p>
 
 - 1. The script will analyze the data and calculate the following metrics: <p>
@@ -40,7 +41,7 @@ This project contains a __python__ file (main.py) that will run a script to anal
   
 - 2. The final script prints the analysis to the terminal and exports a text file with the results<p>
 
-### PyPoll
+## PyPoll
 In this project, I was tasked with helping a town modernize their vote counting process by creating a python script (main.py) to process their votes (Resources > election_data.csv).<p><p>
 
 - 1. First, the script calculates the following from the dataset:<p>
@@ -52,7 +53,7 @@ In this project, I was tasked with helping a town modernize their vote counting 
 
 - 2. The script will then print out the calculations in the previous step to the terminal and export a text file with the results.<p>
 
-## Brainstorming and Pseudocode
+# Brainstorming and Pseudocode
 <p>
 -- in this section I will show <p>
 (1) my initial brainstorming and <p>
@@ -60,7 +61,7 @@ In this project, I was tasked with helping a town modernize their vote counting 
 __Please forgive me, this section might be a little messy.__<p><p>
 
 
-### PyBank<p>
+## PyBank<p>
  <p>
  <details><summary> Brainstorming: </summary>
 - [x] Header/Before we can begin writing code for our script:<p>
@@ -161,7 +162,7 @@ while counter < month_count:<p>
 </p>
 </details>
 
-### PyPoll<p>
+## PyPoll<p>
 -- in this section I will show <p>
  (1) my initial brainstorming and <p>
  (2) my pseudocode, so you can follow my thoughts in how I decided to complete these projects. <p>
@@ -240,7 +241,7 @@ Summary:<p>
 </p>
 </details>
 
-## Review of Projects: notes, links, etc.
+# Review of Projects: notes, links, etc.
  <details><summary> Reflections: </summary>
  <p>
 After seeing how other READMEs are formatted, I will no longer include the brainstorming section. I will possibly the Pseudocode portion, especially when I'm completing coursework to show my work. This illustrates to me the importance of extracurricular projects, so I have the freedom to exclude "my process" notes and focus fully on the material I'm creating.<p><p>
