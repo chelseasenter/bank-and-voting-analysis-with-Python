@@ -5,7 +5,7 @@ Chelsea Senter <p>
 # Table of Contents 
 <details><summary> Overview of Project Objectives: </summary>
 <p>
-PyBank<p>
+[PyBank](#section_name)<p>
 PyPoll<p>
  </p>
  </details>
@@ -19,8 +19,8 @@ PyPoll: Pseudocode<p>
  </details>
  <details><summary> Review of Projects: </summary>
 <p>
-> reflections/notes<p>
-> helpful links<p>
+reflections/notes<p>
+helpful links<p>
   </p>
  </details>
 <p><p>
@@ -30,6 +30,7 @@ PyPoll: Pseudocode<p>
 This folder contains 2 projects. Below is a summary of each project. Enjoy!<p><p>
 
 ## PyBank 
+section_title<a name="section_name"></a>
 This project contains a __python__ file (main.py) that will run a script to analyze my Company's financial records from a **csv** file (Resources > budget_data.csv). <p><p>
 
  1. The script will analyze the data and calculate the following metrics: <p>
