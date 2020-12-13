@@ -40,7 +40,7 @@ This project contains a __python__ file (main.py) that will run a script to anal
   - as well as the average of those changes<p>
   - Greatest increase and decrease in profits and losses over the entire period, represented by date and amount<p><p>
   <p>
- 2. The final script prints the analysis to the terminal and exports a text file with the results<p>
+ 2. The final script prints the analysis to the terminal and exports a text file with the results (Analysis folder > results.txt)<p>
 
 ## PyPoll
 In this project, I was tasked with helping a town modernize their vote counting process by creating a python script (main.py) to process their votes (Resources > election_data.csv).<p><p>
@@ -52,7 +52,7 @@ In this project, I was tasked with helping a town modernize their vote counting 
  - total number of votes each candidate won<p>
  - the winner of the election<p><p>
 <p>
- 2. The script will then print out the calculations in the previous step to the terminal and export a text file with the results.<p>
+ 2. The script will then print out the calculations in the previous step to the terminal and export a text file with the results (Analysis folder > results.txt).<p>
 
 # Brainstorming and Pseudocode
 <p>
