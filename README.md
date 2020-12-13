@@ -45,15 +45,15 @@ This project contains a __python__ file (main.py) that will run a script to anal
 ## PyPoll
 In this project, I was tasked with helping a town modernize their vote counting process by creating a python script (main.py) to process their votes (Resources > election_data.csv).<p><p>
 
-1. First, the script calculates the following from the dataset:<p>
+ 1. First, the script calculates the following from the dataset:<p>
  - total number of votes cast<p>
  - a list of candidates who received votes<p>
  - percentage of votes each candidate won<p>
  - total number of votes each candidate won<p>
  - the winner of the election<p><p>
 <p>
-2. The script will then print out the calculations in the previous step to the terminal and export a text file with the results.<p>
-<p>
+ 2. The script will then print out the calculations in the previous step to the terminal and export a text file with the results.<p>
+
 # Brainstorming and Pseudocode
 <p>
  -- in this section I will show <p>
