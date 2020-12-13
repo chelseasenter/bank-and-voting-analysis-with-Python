@@ -1,8 +1,13 @@
 # python-challenge
 Python Homework Week 3 - PyPoll &amp; PyBank<p>
 
-**Table of Content**
-Overview of Project Objectives: PyBank & PyPoll<p>
+# Table of Contents 
+<details><summary> Overview of Project Objectives: </summary>
+<p>
+PyBank<p>
+PyPoll<p>
+ </p>
+ </details>
 <details><summary> Brainstorming & Pseudocode </summary>
 <p>
 > PyBank: Brainstorming<p>
