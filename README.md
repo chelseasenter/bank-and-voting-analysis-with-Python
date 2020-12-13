@@ -5,7 +5,8 @@ Chelsea Senter <p>
 # Table of Contents 
 <details><summary> Overview of Project Objectives: </summary>
 <p>
-[PyBank](#section_name)<p>
+[PyBank](#section_name)
+ <p>
 PyPoll<p>
  </p>
  </details>
