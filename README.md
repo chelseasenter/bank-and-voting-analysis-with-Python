@@ -1,7 +1,7 @@
 # python-challenge
 Python Homework Week 3 - PyPoll &amp; PyBank<p>
 
-**Table of Content**<p>
+**Table of Content**
 Overview of Project Objectives: PyBank & PyPoll<p>
 Brainstorming & Pseudocode<p>
 > PyBank: Brainstorming<p>
@@ -41,12 +41,13 @@ In this project, I was tasked with helping a town modernize their vote counting 
 
 2. The script will then print out the calculations in the previous step to the terminal and export a text file with the results.<p>
 
-## Brainstorming and Pseudocode
-  -- in this section I will show <p>
+<details><summary> ## Brainstorming and Pseudocode </summary>
+<p>
+-- in this section I will show <p>
 (1) my initial brainstorming and <p>
 (2) my pseudocode, so you can follow my thoughts in how I decided to complete these projects. <p>
 Please forgive me, this section might be a little messy.<p><p>
-
+ </p>
 1. PyBank<p>
 ### Brainstorming:<p>
 - [x] Header/Before we can begin writing code for our script:<p>
@@ -95,32 +96,32 @@ Please forgive me, this section might be a little messy.<p><p>
 -----------------------------------------------------------<p>
 
 ### Pseudocode: <p>
-[x] Header/Before we can begin writing code for our script:<p>
+- [x] Header/Before we can begin writing code for our script:<p>
 import os <p>
 import csv <p>
 finance_csv = os.path.join("PATH") <p>
 with open(finance_csv, encoding='utf-8') as bankfile:<p>
 csvreader = csv.reader(bankfile, delimiter=",")<p><p>
 
-[x] Notes/things to keep in mind<p>
+- [x] Notes/things to keep in mind<p>
  nix_header = next(csvreader)<p>
  lists<p><p>
   
-[x] Total # months<p>
+- [x] Total # months<p>
  month_count = len(list(csvreader))<p>
- [x] so count all rows except header = total months in data set<p><p>
+- [x] so count all rows except header = total months in data set<p><p>
  
  print(month_count) -- to test it works<p><p>
     
-[x] Net<p>
+- [x] Net<p>
 net_total = 0<p>
 for month in csvreader:<p>
   net_total += month[1]<p>
-[x] add all rows to a variable set to 0 (except the header)<p><p>
+- [x] add all rows to a variable set to 0 (except the header)<p><p>
 
 print(net_total) --to make sure it works<p><p>
 
-[x] Calc changes, find max and min change<p>
+- [x] Calc changes, find max and min change<p>
 --------try list comprehension, maybe?---------diff_list = [diff for diff in csvreader]<p><p>
 
 counter = 0<p>
@@ -130,14 +131,14 @@ while counter < month_count:<p>
  difference = csvreader[row] + csvraeder[row + 1]<p>
  counter += 1<p><p>
 
-[x] Greatest increase in profits (date and amount) over period<p>
-   [] from diff_list, find the maximum number in the list, then search for that number in the list (checks for multiples)<p>
+- [x] Greatest increase in profits (date and amount) over period<p>
+- [x] from diff_list, find the maximum number in the list, then search for that number in the list (checks for multiples)<p>
     if number of max# is less than 1, pull the date (correlate the position of the max# in the diff_list with the csv rows) amd set as greatest_profit<p>
     else nubmer of max# if greater<p>
-   [] from diff_list, find the minimum number in the list, then search for that number in the list (checks for multiples)<p>
+- [x] from diff_list, find the minimum number in the list, then search for that number in the list (checks for multiples)<p>
     if number of min# is less than 1, pull the date (correlate the position of the min# in the diff_list with the csv rows) and set as greatest_loss<p><p>
     
-[x] Print results<p>
+- [x] Print results<p>
  print( Financial Analysis<p>
  ------------<p>
  Total Months: total_months<p>
@@ -164,39 +165,39 @@ while counter < month_count:<p>
  5. winner of the election based on popular vote<p><p>
 
 Summary:<p>
-[x] set up imports, open and read csv files<p>
-[x] next header - we don't need it!<p>
-[x] need a list of vote choices (vote_choice_list) then...<p>
-[x] len(vote_choice_list) for total votes number - 1<p>
-[x] find unique values (candidate names) of vote_choice_list - 2<p>
-[x] sum items in vote_choice_list by name (correy_list, khan_list, li_list, etc) - 4<p>
-[] divide individual candidate list by vote_choice_list, set value to pct_khan, pct_correy, etc - 3<p>
-[] create dictionary totals (khan:15, li:23, etc)<p>
-[] find the highest value in dictionary<p><p>
+- [x] set up imports, open and read csv files<p>
+- [x] next header - we don't need it!<p>
+- [x] need a list of vote choices (vote_choice_list) then...<p>
+- [x] len(vote_choice_list) for total votes number - 1<p>
+- [x] find unique values (candidate names) of vote_choice_list - 2<p>
+- [x] sum items in vote_choice_list by name (correy_list, khan_list, li_list, etc) - 4<p>
+- [x] divide individual candidate list by vote_choice_list, set value to pct_khan, pct_correy, etc - 3<p>
+- [x] create dictionary totals (khan:15, li:23, etc)<p>
+- [x] find the highest value in dictionary<p><p>
  
 ### Pseudocode:<p>
-[x] set up imports, open and read csv files<p>
+- [x] set up imports, open and read csv files<p>
     import csv & os<p>
     with open election_data.csv as pollfile<p>
     call upon csv.reader to read pollfile, using delimiter=","<p><p>
 
-[x] next header - we don't need it!<p>
+- [x] next header - we don't need it!<p>
     next(csvreader)<p><p>
   
-[x] need a list of vote choices (vote_choice_list) then...<p>
+- [x] need a list of vote choices (vote_choice_list) then...<p>
     vote_choice_list = []<p>
     for row in csvreader:<p>
         append() vote_choice_list with index position [2], because lists start at [0] and we need the last "column" in the row)<p><p>
     
-[x] len(vote_choice_list) for total votes number - 1<p>
+- [x] len(vote_choice_list) for total votes number - 1<p>
     vote_count = len(vote_choice_list)<p>
     print(vote_count)<p>
     print("----------")<p><p>
 
-[x] find unique values (candidate names) of vote_choice_list - 2<p>
+- [x] find unique values (candidate names) of vote_choice_list - 2<p>
       list(set(vote_choice_list))<p><p>
 
-[x] sum items in vote_choice_list by name (correy_list, khan_list, li_list, etc) - 4<p><p>
+- [x] sum items in vote_choice_list by name (correy_list, khan_list, li_list, etc) - 4<p><p>
 
     final_results = {}<p><p>
         for candidate in candidates_names:<p>
@@ -204,26 +205,26 @@ Summary:<p>
         final_results[candidate] = final_tally<p>
     print(final_results) <p><p>
 
-[x] divide individual candidate list (total votes per candidate) by vote_choice_list, set value to dictionary as list with the total votes - 3<p>
+- [x] divide individual candidate list (total votes per candidate) by vote_choice_list, set value to dictionary as list with the total votes - 3<p>
          final_results[key] = [final_tally, round((final_tally / vote_count)*100,3)] <p>
 
-[x] find the highest value in dictionary by setting for loop and initializing "winner_value"<p><p>
+- [x] find the highest value in dictionary by setting for loop and initializing "winner_value"<p><p>
          winner_value = 0 <p>
          (inside for loop for each candidate:)
           if final_tally > winner_value: <p>
             winner_value = final_tally <p>
             winner_name = candidate <p>
-[x] create lists to for loop into terminal (print) and write into text file all at once: <p>
+- [x] create lists to for loop into terminal (print) and write into text file all at once: <p>
              variables needed: <p>
              header <p>
              body with candidate overview <p>
              footer declaring winner <p> <p>
 
 ## Review of Projects: notes, links, etc.
-
+__Reflection:__<p>
 After seeing how other READMEs are formatted, I will no longer include the brainstorming section. I will possibly the Pseudocode portion, especially when I'm completing coursework to show my work. This illustrates to me the importance of extracurricular projects, so I have the freedom to exclude "my process" notes and focus fully on the material I'm creating.<p><p>
 
-I was doubtful the scripts I wrote could be condensed further. However, after looking over it, I'm quite pleased with what I created. I'm sure I will find quicker ways to get the results I need, but for now this wasn't half bad.<p><p>
+There was a lot of brainstorming, writing things out, deleting lines, adding lines, scrapping the whole thing, starting over. It was frustrating to feel totally lost in what I had to do when I felt I had exhausted all possible routes on the current "thought road" I was on. However, after looking over my final products, I'm quite pleased with what I created. Although there were moments of frustration, those moments allowed for wonderful eureka! moments when things worked the first time I ran them. I'm looking forward to those moments in the future as I progress my knowledge. Overall, I'm sure I will find quicker ways to get the results I need, but for now this wasn't half bad.<p><p>
 
 __Some links that I found helpful during these projects:__<p>
 [how to round a number in python](https://stackoverflow.com/questions/20457038/how-to-round-to-2-decimals-with-python)<p>
