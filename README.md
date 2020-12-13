@@ -50,6 +50,7 @@ Please forgive me, this section might be a little messy.<p><p>
 
  
 1. PyBank<p>
+ <p>
  <details><summary> Brainstorming: </summary>
 - [x] Header/Before we can begin writing code for our script:<p>
   import classes (csv and os)<p>
@@ -97,7 +98,7 @@ Please forgive me, this section might be a little messy.<p><p>
 </p>
 </details>
 
-### Pseudocode: <p>
+ <details><summary> Pseudocode: </summary>
 - [x] Header/Before we can begin writing code for our script:<p>
 import os <p>
 import csv <p>
@@ -146,6 +147,8 @@ while counter < month_count:<p>
  Total Months: total_months<p>
  Total: net_total<p>
  Average Change: average_change<p><p>
+</p>
+</details>
 
 2. PyPoll<p>
 -- in this section I will show <p>
@@ -153,7 +156,7 @@ while counter < month_count:<p>
  (2) my pseudocode, so you can follow my thoughts in how I decided to complete these projects. <p>
  Please forgive me, this section might be a little messy.<p><p>
 
-### Brainstorming:<p>
+ <details><summary> Brainstorming: </summary>
  three columns = Voter ID, County, and Candidate<p>
  --note to self: voter ID is an 8 character string, NOT integer!<p>
  1. total votes cast (len of list minus header)<p>
@@ -176,8 +179,10 @@ Summary:<p>
 - [x] divide individual candidate list by vote_choice_list, set value to pct_khan, pct_correy, etc - 3<p>
 - [x] create dictionary totals (khan:15, li:23, etc)<p>
 - [x] find the highest value in dictionary<p><p>
- 
-### Pseudocode:<p>
+</p>
+</details>
+
+ <details><summary> Pseudocode: </summary>
 - [x] set up imports, open and read csv files<p>
     import csv & os<p>
     with open election_data.csv as pollfile<p>
@@ -221,14 +226,20 @@ Summary:<p>
              header <p>
              body with candidate overview <p>
              footer declaring winner <p> <p>
+</p>
+</details>
 
 ## Review of Projects: notes, links, etc.
-__Reflection:__<p>
+ <details><summary> Reflections: </summary>
+ <p>
 After seeing how other READMEs are formatted, I will no longer include the brainstorming section. I will possibly the Pseudocode portion, especially when I'm completing coursework to show my work. This illustrates to me the importance of extracurricular projects, so I have the freedom to exclude "my process" notes and focus fully on the material I'm creating.<p><p>
 
 There was a lot of brainstorming, writing things out, deleting lines, adding lines, scrapping the whole thing, starting over. It was frustrating to feel totally lost in what I had to do when I felt I had exhausted all possible routes on the current "thought road" I was on. However, after looking over my final products, I'm quite pleased with what I created. Although there were moments of frustration, those moments allowed for wonderful eureka! moments when things worked the first time I ran them. I'm looking forward to those moments in the future as I progress my knowledge. Overall, I'm sure I will find quicker ways to get the results I need, but for now this wasn't half bad.<p><p>
+</p>
+</details>
 
-__Some links that I found helpful during these projects:__<p>
+ <details><summary> Some links that I found helpful during these projects: </summary>
+ <p>
 [how to round a number in python](https://stackoverflow.com/questions/20457038/how-to-round-to-2-decimals-with-python)<p>
 [how to write files to a txt file](https://www.datacamp.com/community/tutorials/reading-writing-files-python)<p>
 [finding the index of an item in a list](https://stackoverflow.com/questions/176918/finding-the-index-of-an-item-in-a-list)<p>
@@ -240,3 +251,5 @@ __Some links that I found helpful during these projects:__<p>
 [how to count an item in a list](https://www.kite.com/python/answers/how-to-count-the-number-of-occurrences-of-an-element-in-a-list-in-python#:~:text=of%20%22b%22%20.-,Use%20list.,number%20of%20occurrences%20of%20value%20.)<p>
 [how to add a key:value to a dictionary](https://www.journaldev.com/23232/python-add-to-dictionary)<p>
 [printing values from a dictionary](https://realpython.com/iterate-through-dictionary-python/)<p>
+ </p>
+ </details>
