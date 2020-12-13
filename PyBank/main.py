@@ -56,7 +56,7 @@ with open(finance_csv) as bankfile:
     sum_diff = 0
     for item in diff_list:
         sum_diff = sum_diff + int(item)
-    average_diff = round(int(sum_diff / diff_count),4)
+    average_diff = int(sum_diff / diff_count)
 
 # ## GREATEST PROFIT MONTH, AMOUNT
 # # using the list of differences between each month, find the highest number, but check for multiples
@@ -70,15 +70,13 @@ with open(finance_csv) as bankfile:
     gl_index = diff_list.index(greatest_loss)
 
 
-
-
 # ##PRINT RESULTS
 # # print title, -----, Total Months, Total Net, Average Change, 
 final_results = [f"Financial Analysis\n", 
 f"----------------------------\n", 
 f"Total Months: {month_count}\n", 
 f"Total: ${sum_net}\n", 
-f"Average  Change: ${average_diff}\n", 
+f"Average  Change: ${average_diff:.2f}\n", 
 f"Greatest Increase in Profits: {month_list[gp_index+1]} (${greatest_profit})\n", 
 f"Greatest Decrease in Profits: {month_list[gl_index+1]} (${greatest_loss})\n"
 ]
