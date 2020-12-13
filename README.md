@@ -23,8 +23,7 @@ reflections/notes<p>
 helpful links<p>
   </p>
  </details>
-<p><p>
-- - - - 
+<p><p><p>
 
 # Overview of Project Objectives
 
