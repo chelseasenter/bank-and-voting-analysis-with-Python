@@ -20,36 +20,36 @@ This folder contains 2 projects. Below is a summary of each project. Enjoy!<p><p
 ### PyBank 
 This project contains a __python__ file (main.py) that will run a script to analyze my Company's financial records from a **csv** file (Resources > budget_data.csv). <p><p>
 
-1. The script will analyze the data and calculate the following metrics: <p>
-   * Total number of months in the provided data set<p>
-   * Net Profits and Losses over the entire period<p>
-   * Changes in Profits and Losses over the entire period<p>
-   * as well as the average of those changes<p>
-   * Greatest increase and decrease in profits and losses over the entire period, represented by date and amount<p><p>
+- 1. The script will analyze the data and calculate the following metrics: <p>
+-    * Total number of months in the provided data set<p>
+-    * Net Profits and Losses over the entire period<p>
+-    * Changes in Profits and Losses over the entire period<p>
+-    * as well as the average of those changes<p>
+-    * Greatest increase and decrease in profits and losses over the entire period, represented by date and amount<p><p>
   
-2. The final script prints the analysis to the terminal and exports a text file with the results<p>
+- 2. The final script prints the analysis to the terminal and exports a text file with the results<p>
 
 ### PyPoll
 In this project, I was tasked with helping a town modernize their vote counting process by creating a python script (main.py) to process their votes (Resources > election_data.csv).<p><p>
 
-1. First, the script calculates the following from the dataset:<p>
-   * total number of votes cast<p>
-   * a list of candidates who received votes<p>
-   * percentage of votes each candidate won<p>
-   * total number of votes each candidate won<p>
-   * the winner of the election<p><p>
+- 1. First, the script calculates the following from the dataset:<p>
+-    * total number of votes cast<p>
+-    * a list of candidates who received votes<p>
+-    * percentage of votes each candidate won<p>
+-    * total number of votes each candidate won<p>
+-    * the winner of the election<p><p>
 
-2. The script will then print out the calculations in the previous step to the terminal and export a text file with the results.<p>
+- 2. The script will then print out the calculations in the previous step to the terminal and export a text file with the results.<p>
 
-##Brainstorming and Pseudocode
+## Brainstorming and Pseudocode
 <p>
 -- in this section I will show <p>
 (1) my initial brainstorming and <p>
 (2) my pseudocode, so you can follow my thoughts in how I decided to complete these projects. <p>
-Please forgive me, this section might be a little messy.<p><p>
+__Please forgive me, this section might be a little messy.__<p><p>
 
- 
-1. PyBank<p>
+
+### PyBank<p>
  <p>
  <details><summary> Brainstorming: </summary>
 - [x] Header/Before we can begin writing code for our script:<p>
@@ -150,7 +150,7 @@ while counter < month_count:<p>
 </p>
 </details>
 
-2. PyPoll<p>
+### PyPoll<p>
 -- in this section I will show <p>
  (1) my initial brainstorming and <p>
  (2) my pseudocode, so you can follow my thoughts in how I decided to complete these projects. <p>
