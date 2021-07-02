@@ -2,26 +2,6 @@
 Python Homework Week 3 - PyPoll &amp; PyBank<p>
 Chelsea Senter <p>
 
-# Table of Contents 
-Overview of Project Objectives:
-<p>
-- PyBank <p>
- - PyPoll<p>
-
-Brainstorming & Pseudocode
-<p>
-- PyBank: Brainstorming<p>
-- PyBank: Pseudocode<p>
-- PyPoll: Brainstorming<p>
-- PyPoll: Pseudocode<p>
-
-Review of Projects:
-<p>
-- reflections/notes<p>
-- helpful links<p>
-
-<p><p><p>
-
 # Overview of Project Objectives
 
 This folder contains 2 projects. Below is a summary of each project. Enjoy!<p><p>
