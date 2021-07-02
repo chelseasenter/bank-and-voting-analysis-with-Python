@@ -8,7 +8,7 @@ This folder contains 2 projects. Below is a summary of each project. Enjoy!<p><p
 
 ## PyBank 
 
-This project contains a __python__ file (main.py) that will run a script to analyze my Company's financial records from a **csv** file (Resources > budget_data.csv). <p><p>
+This project contains a script [(main.py)](https://github.com/chelseasenter/python-challenge/blob/main/PyBank/main.py) that will run a script to analyze a Company's financial records from a [budget database](https://github.com/chelseasenter/python-challenge/blob/main/PyBank/Resources/budget_data.csv) <p><p>
 
  1. The script will analyze the data and calculate the following metrics: <p>
   - Total number of months in the provided data set<p>
@@ -20,7 +20,7 @@ This project contains a __python__ file (main.py) that will run a script to anal
  2. The final script prints the analysis to the terminal and exports a text file with the results (Analysis folder > results.txt)<p>
 
 ## PyPoll
-In this project, I was tasked with helping a town modernize their vote counting process by creating a python script (main.py) to process their votes (Resources > election_data.csv).<p><p>
+In this project, I was tasked with modernizing a vote counting process by creating a [script](https://github.com/chelseasenter/python-challenge/blob/main/PyPoll/main.py) to process the votes from a [database](https://raw.githubusercontent.com/chelseasenter/python-challenge/main/PyPoll/Resources/election_data.csv).<p><p>
 
  1. First, the script calculates the following from the dataset:<p>
  - total number of votes cast<p>
@@ -225,7 +225,7 @@ There was a lot of brainstorming, writing things out, deleting lines, adding lin
 </p>
 </details>
 
- <details><summary> Some links that I found helpful during these projects: </summary>
+ <details><summary> Helpful Links for this Project </summary>
  <p>
 [how to round a number in python](https://stackoverflow.com/questions/20457038/how-to-round-to-2-decimals-with-python)<p>
 [how to write files to a txt file](https://www.datacamp.com/community/tutorials/reading-writing-files-python)<p>
