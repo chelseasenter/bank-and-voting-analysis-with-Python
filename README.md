@@ -217,7 +217,7 @@ Summary<p>
 </details>
 
 # Review of Projects: notes, links, etc.
- <details><summary> Reflections: </summary>
+ <details><summary> Reflections </summary>
  <p>
 After seeing how other READMEs are formatted, I will no longer include the brainstorming section. I will possibly the Pseudocode portion, especially when I'm completing coursework to show my work. This illustrates to me the importance of extracurricular projects, so I have the freedom to exclude "my process" notes and focus fully on the material I'm creating.<p><p>
 
