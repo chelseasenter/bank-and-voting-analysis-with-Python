@@ -8,7 +8,7 @@ This folder contains 2 projects. Below is a summary of each project. Enjoy!<p><p
 
 ## PyBank 
 
-This project contains a script [(main.py)](https://github.com/chelseasenter/python-challenge/blob/main/PyBank/main.py) that will run a script to analyze a Company's financial records from a [budget database](https://github.com/chelseasenter/python-challenge/blob/main/PyBank/Resources/budget_data.csv) <p><p>
+This project contains a script ([main.py](https://github.com/chelseasenter/python-challenge/blob/main/PyBank/main.py)) that will run a script to analyze a Company's financial records from a budget database ([budget_data.csv](https://github.com/chelseasenter/python-challenge/blob/main/PyBank/Resources/budget_data.csv)) <p><p>
 
  1. The script will analyze the data and calculate the following metrics: <p>
   - Total number of months in the provided data set<p>
