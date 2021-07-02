@@ -10,14 +10,14 @@ This folder contains 2 projects. Below is a summary of each project. Enjoy!<p><p
 
 This project contains a script ([main.py](https://github.com/chelseasenter/python-challenge/blob/main/PyBank/main.py)) that will run a script to analyze a Company's financial records from a budget database ([budget_data.csv](https://github.com/chelseasenter/python-challenge/blob/main/PyBank/Resources/budget_data.csv)) <p><p>
 
- 1. The script will analyze the data and calculate the following metrics: <p>
+1. The script will analyze the data and calculate the following metrics: <p>
   - Total number of months in the provided data set<p>
   - Net Profits and Losses over the entire period<p>
   - Changes in Profits and Losses over the entire period<p>
   - as well as the average of those changes<p>
   - Greatest increase and decrease in profits and losses over the entire period, represented by date and amount<p><p>
   <p>
- 2. The final script prints the analysis to the terminal and exports a text file ([results.txt](https://github.com/chelseasenter/python-challenge/blob/main/PyBank/Analysis/results.txt)) with the results<p>
+2. The final script prints the analysis to the terminal and exports a text file ([results.txt](https://github.com/chelseasenter/python-challenge/blob/main/PyBank/Analysis/results.txt)) with the results<p>
 
 ## PyPoll
 In this project, I was tasked with modernizing a vote counting process by creating a script([main.py](https://github.com/chelseasenter/python-challenge/blob/main/PyPoll/main.py)) to process the votes from a database ([election_data.csv](https://raw.githubusercontent.com/chelseasenter/python-challenge/main/PyPoll/Resources/election_data.csv)).<p><p>
@@ -227,16 +227,16 @@ There was a lot of brainstorming, writing things out, deleting lines, adding lin
 
  <details><summary> Helpful Links for this Project </summary>
  <p>
-[how to round a number in python](https://stackoverflow.com/questions/20457038/how-to-round-to-2-decimals-with-python)<p>
-[how to write files to a txt file](https://www.datacamp.com/community/tutorials/reading-writing-files-python)<p>
-[finding the index of an item in a list](https://stackoverflow.com/questions/176918/finding-the-index-of-an-item-in-a-list)<p>
-[finding the min/max of items in a list](https://medium.com/programminginpython-com/python-program-to-find-the-largest-and-smallest-number-in-a-list-fd8fac8aba08)<p>
-[printing lists: 4 ways](https://www.geeksforgeeks.org/print-lists-in-python-4-different-ways/)<p>
-[python sets](https://www.w3schools.com/python/python_sets.asp)<p>
-[finding unique values in a list by creating a set](https://stackoverflow.com/questions/12897374/get-unique-values-from-a-list-in-python)<p>
-[find the highest value in a dictionary](https://stackoverflow.com/questions/268272/getting-key-with-maximum-value-in-dictionary)<p>
-[how to count an item in a list](https://www.kite.com/python/answers/how-to-count-the-number-of-occurrences-of-an-element-in-a-list-in-python#:~:text=of%20%22b%22%20.-,Use%20list.,number%20of%20occurrences%20of%20value%20.)<p>
-[how to add a key:value to a dictionary](https://www.journaldev.com/23232/python-add-to-dictionary)<p>
-[printing values from a dictionary](https://realpython.com/iterate-through-dictionary-python/)<p>
+[how to round a number in python](https://stackoverflow.com/questions/20457038/how-to-round-to-2-decimals-with-python) <p>
+[how to write files to a txt file](https://www.datacamp.com/community/tutorials/reading-writing-files-python) <p>
+[finding the index of an item in a list](https://stackoverflow.com/questions/176918/finding-the-index-of-an-item-in-a-list) <p>
+[finding the min/max of items in a list](https://medium.com/programminginpython-com/python-program-to-find-the-largest-and-smallest-number-in-a-list-fd8fac8aba08) <p>
+[printing lists: 4 ways](https://www.geeksforgeeks.org/print-lists-in-python-4-different-ways/) <p>
+[python sets](https://www.w3schools.com/python/python_sets.asp) <p>
+[finding unique values in a list by creating a set](https://stackoverflow.com/questions/12897374/get-unique-values-from-a-list-in-python) <p>
+[find the highest value in a dictionary](https://stackoverflow.com/questions/268272/getting-key-with-maximum-value-in-dictionary) <p>
+[how to count an item in a list](https://www.kite.com/python/answers/how-to-count-the-number-of-occurrences-of-an-element-in-a-list-in-python#:~:text=of%20%22b%22%20.-,Use%20list.,number%20of%20occurrences%20of%20value%20.) <p>
+[how to add a key:value to a dictionary](https://www.journaldev.com/23232/python-add-to-dictionary) <p>
+[printing values from a dictionary](https://realpython.com/iterate-through-dictionary-python/) <p>
  </p>
  </details>
