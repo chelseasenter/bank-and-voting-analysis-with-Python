@@ -36,7 +36,7 @@ In this project, I was tasked with modernizing a vote counting process by creati
 # Brainstorming and Pseudocode
 <p>
  -- in this section I will show <p>
- 1. my initial brainstorming (because I'm extra) and <p>
+ 1. my initial brainstorming <p>
  2. my pseudocode, so you can follow my thoughts in how I decided to complete these projects. <p>
  **Please forgive me, this section might be a little messy.**
 <p><p>
