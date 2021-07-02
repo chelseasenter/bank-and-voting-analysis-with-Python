@@ -229,6 +229,7 @@ There was a lot of brainstorming, writing things out, deleting lines, adding lin
 
  <details><summary> Helpful Links for this Project </summary>
  <p>
+
 [how to round a number in python](https://stackoverflow.com/questions/20457038/how-to-round-to-2-decimals-with-python) <p>
 [how to write files to a txt file](https://www.datacamp.com/community/tutorials/reading-writing-files-python) <p>
 [finding the index of an item in a list](https://stackoverflow.com/questions/176918/finding-the-index-of-an-item-in-a-list) <p>
