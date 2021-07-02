@@ -5,20 +5,20 @@ Chelsea Senter <p>
 # Table of Contents 
 Overview of Project Objectives:
 <p>
-> PyBank <p>
-> PyPoll<p>
+ * PyBank <p>
+ * PyPoll<p>
 
 Brainstorming & Pseudocode
 <p>
-> PyBank: Brainstorming<p>
-> PyBank: Pseudocode<p>
-> PyPoll: Brainstorming<p>
-> PyPoll: Pseudocode<p>
+ * PyBank: Brainstorming<p>
+ * PyBank: Pseudocode<p>
+ * PyPoll: Brainstorming<p>
+ * PyPoll: Pseudocode<p>
 
 Review of Projects:
 <p>
-> reflections/notes<p>
-> helpful links<p>
+ * reflections/notes<p>
+ * helpful links<p>
 
 <p><p><p>
 
