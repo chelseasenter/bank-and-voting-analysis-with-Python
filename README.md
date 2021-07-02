@@ -42,7 +42,7 @@ In this project, I was tasked with helping a town modernize their vote counting 
 
 ## PyBank<p>
  <p>
- <details><summary> Brainstorming: </summary>
+ <details><summary> Brainstorming </summary>
 - [x] Header/Before we can begin writing code for our script:<p>
   import classes (csv and os)<p>
   locate csv file<p>
@@ -89,7 +89,7 @@ In this project, I was tasked with helping a town modernize their vote counting 
 </p>
 </details>
 
- <details><summary> Pseudocode: </summary>
+ <details><summary> Pseudocode </summary>
 - [x] Header/Before we can begin writing code for our script:<p>
 import os <p>
 import csv <p>
@@ -143,7 +143,7 @@ while counter < month_count:<p>
 
 ## PyPoll<p>
 
- <details><summary> Brainstorming: </summary>
+ <details><summary> Brainstorming </summary>
  three columns = Voter ID, County, and Candidate<p>
  --note to self: voter ID is an 8 character string, NOT integer!<p>
  1. total votes cast (len of list minus header)<p>
@@ -156,7 +156,7 @@ while counter < month_count:<p>
    --add the candidate name as key and the number of votes as value<p>
  5. winner of the election based on popular vote<p><p>
 
-Summary:<p>
+Summary<p>
 - [x] set up imports, open and read csv files<p>
 - [x] next header - we don't need it!<p>
 - [x] need a list of vote choices (vote_choice_list) then...<p>
@@ -169,7 +169,7 @@ Summary:<p>
 </p>
 </details>
 
- <details><summary> Pseudocode: </summary>
+ <details><summary> Pseudocode </summary>
 - [x] set up imports, open and read csv files<p>
     import csv & os<p>
     with open election_data.csv as pollfile<p>
