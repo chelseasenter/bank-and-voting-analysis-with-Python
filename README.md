@@ -9,14 +9,13 @@ PyBank <p>
 PyPoll<p>
  </p>
  </details>
-<details><summary> Brainstorming & Pseudocode </summary>
+Brainstorming & Pseudocode
 <p>
-PyBank: Brainstorming<p>
-PyBank: Pseudocode<p>
+* PyBank: Brainstorming<p>
+* PyBank: Pseudocode<p>
 PyPoll: Brainstorming<p>
 PyPoll: Pseudocode<p>
- </p>
- </details>
+
  <details><summary> Review of Projects: </summary>
 <p>
 reflections/notes<p>
