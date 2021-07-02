@@ -17,8 +17,8 @@ This project contains a script ([main.py](https://github.com/chelseasenter/pytho
   - as well as the average of those changes<p>
   - Greatest increase and decrease in profits and losses over the entire period, represented by date and amount<p><p>
   <p>
-2. The final script prints the analysis to the terminal and exports a text file [google test](www.google.com)
-    [results.txt](https://github.com/chelseasenter/python-challenge/blob/main/PyBank/Analysis/results.txt)) with the results<p>
+
+The final script prints the analysis to the terminal and exports a text file [results.txt](https://github.com/chelseasenter/python-challenge/blob/main/PyBank/Analysis/results.txt)) with the results<p>
 
 ## PyPoll
 In this project, I was tasked with modernizing a vote counting process by creating a script([main.py](https://github.com/chelseasenter/python-challenge/blob/main/PyPoll/main.py)) to process the votes from a database ([election_data.csv](https://raw.githubusercontent.com/chelseasenter/python-challenge/main/PyPoll/Resources/election_data.csv)).<p><p>
