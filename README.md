@@ -142,10 +142,6 @@ while counter < month_count:<p>
 </details>
 
 ## PyPoll<p>
--- in this section I will show <p>
-1. my initial brainstorming and <p>
-2. my pseudocode, so you can follow my thoughts in how I decided to complete these projects. <p>
-**Please forgive me, this section might be a little messy.**<p><p>
 
  <details><summary> Brainstorming: </summary>
  three columns = Voter ID, County, and Candidate<p>
