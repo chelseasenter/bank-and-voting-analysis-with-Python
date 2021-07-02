@@ -6,7 +6,7 @@ Chelsea Senter <p>
 Overview of Project Objectives:
 <p>
 - PyBank <p>
-- PyPoll<p>
+ - PyPoll<p>
 
 Brainstorming & Pseudocode
 <p>
